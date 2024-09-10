@@ -20,9 +20,10 @@ export default function page() {
             </div>
 
             <p className="text-2xl sm:text-3xl md:text-4xl z-10 font-bold italic text-dark">
-                <span className="text-white">BrainBooster</span> is available{" "}
-                <br /> in your <span className="text-white">appstore</span>{" "}
-                soon!
+                <span className="text-white">BrainBooster</span> is available in{" "}
+                <br />
+                <span className="text-white">appstore</span> and{" "}
+                <span className="text-white">Google play</span> soon!
             </p>
         </motion.div>
     );
