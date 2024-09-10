@@ -12,7 +12,7 @@ export default function page() {
             initial="hidden"
             animate="visible"
             variants={fadeInUp}
-            className="flex flex-col h-screen gap-8 text-white justify-between container mx-auto px-4 pt-32 pb-16"
+            className="flex flex-col h-screen gap-8 text-white justify-between container mx-auto px-4 pt-32 pb-16 overflow-clip"
         >
             <div className="flex flex-col gap-8">
                 <h1 className="text-5xl font-bold z-10">Contact us...</h1>
