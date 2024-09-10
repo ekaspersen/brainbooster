@@ -52,8 +52,8 @@ const Header = () => {
                     {/* Hamburger Icon */}
                     <motion.div
                         animate={{
-                            rotate: menuOpen ? 30 : 0,
-                            y: menuOpen ? 1 : 0,
+                            rotate: menuOpen ? 40 : 0,
+                            y: menuOpen ? 6 : 0,
                             transition: { delay: menuOpen ? 0.1 : 0 },
                         }}
                         className="w-6 rounded-md h-[3px] mb-1 bg-white transition-all duration-300"
@@ -68,8 +68,8 @@ const Header = () => {
                     ></motion.div>
                     <motion.div
                         animate={{
-                            rotate: menuOpen ? -30 : 0,
-                            y: menuOpen ? -2 : 0,
+                            rotate: menuOpen ? -40 : 0,
+                            y: menuOpen ? -8 : 0,
                             transition: { delay: menuOpen ? 0.1 : 0 },
                         }}
                         className="w-6 rounded-md h-[3px] bg-white transition-all duration-300"
@@ -83,7 +83,9 @@ const Header = () => {
                 animate={menuOpen ? "visible" : "hidden"}
                 exit="hidden"
                 variants={menuVariants}
-                className="absolute top-full text-lg font-bold right-0 bg-primary  text-white z-50 shadow-lg"
+                className={`absolute top-full text-lg font-bold right-0 bg-primary text-white z-50 shadow-lg transition-all duration-300 ${
+                    !menuOpen ? "pointer-events-none" : ""
+                }`}
             >
                 <ul className="flex flex-col text-center">
                     <li>
