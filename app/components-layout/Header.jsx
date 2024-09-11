@@ -28,6 +28,7 @@ const Header = () => {
             animate="visible"
             variants={fadeInUp}
             className="fixed top-0 left-0 right-0 z-50 flex justify-between items-center p-4 bg-primary container max-w-7xl mx-auto"
+
         >
             {/* Logo Section */}
             <div className="text-xl font-bold text-white">
@@ -52,8 +53,8 @@ const Header = () => {
                     {/* Hamburger Icon */}
                     <motion.div
                         animate={{
-                            rotate: menuOpen ? 30 : 0,
-                            y: menuOpen ? 1 : 0,
+                            rotate: menuOpen ? 40 : 0,
+                            y: menuOpen ? 6 : 0,
                             transition: { delay: menuOpen ? 0.1 : 0 },
                         }}
                         className="w-6 rounded-md h-[3px] mb-1 bg-white transition-all duration-300"
@@ -68,8 +69,8 @@ const Header = () => {
                     ></motion.div>
                     <motion.div
                         animate={{
-                            rotate: menuOpen ? -30 : 0,
-                            y: menuOpen ? -2 : 0,
+                            rotate: menuOpen ? -40 : 0,
+                            y: menuOpen ? -8 : 0,
                             transition: { delay: menuOpen ? 0.1 : 0 },
                         }}
                         className="w-6 rounded-md h-[3px] bg-white transition-all duration-300"
@@ -84,13 +85,14 @@ const Header = () => {
                 exit="hidden"
                 variants={menuVariants}
                 className="absolute top-full w-56 text-lg font-bold right-0 bg-primary text-white z-50 shadow-lg"
+
             >
-                <ul className="flex flex-col py-4">
+                <ul className="flex flex-col text-center">
                     <li>
                         <Link
                             href="/"
                             onClick={handleLinkClick}
-                            className="block px-4 py-2 text-white hover:opacity-50 transition-colors duration-300"
+                            className="block px-16 py-3 text-white hover:opacity-80 hover:bg-primary_dark transition-colors duration-300"
                         >
                             Home
                         </Link>
@@ -99,7 +101,7 @@ const Header = () => {
                         <Link
                             href="/about"
                             onClick={handleLinkClick}
-                            className="block px-4 py-2 text-white hover:opacity-50 transition-colors duration-300"
+                            className="block px-4 py-3 text-white hover:opacity-80 hover:bg-primary_dark transition-colors duration-300"
                         >
                             About
                         </Link>
@@ -108,7 +110,7 @@ const Header = () => {
                         <Link
                             href="/contact"
                             onClick={handleLinkClick}
-                            className="block px-4 py-2 text-white hover:opacity-50 transition-colors duration-300"
+                            className="block px-4 py-3 text-white hover:opacity-80 hover:bg-primary_dark transition-colors duration-300"
                         >
                             Contact
                         </Link>
