@@ -27,7 +27,7 @@ const Header = () => {
             initial="hidden"
             animate="visible"
             variants={fadeInUp}
-            className="fixed top-0 left-0 right-0 z-50 flex justify-between items-center p-4 bg-primary bg-opacity-40 container mx-auto"
+            className="fixed top-0 left-0 right-0 z-50 flex justify-between items-center p-4 bg-primary container max-w-7xl mx-auto"
         >
             {/* Logo Section */}
             <div className="text-xl font-bold text-white">
@@ -83,7 +83,7 @@ const Header = () => {
                 animate={menuOpen ? "visible" : "hidden"}
                 exit="hidden"
                 variants={menuVariants}
-                className="absolute top-full w-56 text-lg font-bold right-0 bg-primary bg-opacity-10 text-white z-50 shadow-lg"
+                className="absolute top-full w-56 text-lg font-bold right-0 bg-primary text-white z-50 shadow-lg"
             >
                 <ul className="flex flex-col py-4">
                     <li>

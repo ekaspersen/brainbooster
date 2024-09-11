@@ -10,7 +10,7 @@ export default function Home() {
     };
 
     return (
-        <div className="h-screen bg-hero-pattern px-6 bg-cover pt-11 bg-center flex flex-col justify-center items-center gap-16 overflow-hidden relative">
+        <div className="h-screen px-4 bg-cover container max-w-7xl mx-auto py-8   bg-center flex flex-col justify-center items-center gap-24 md:gap-0 overflow-hidden relative">
             <motion.h1
                 className="text-5xl font-bold sr-only z-10"
                 initial="hidden"
@@ -20,42 +20,30 @@ export default function Home() {
                 BrainBooster
             </motion.h1>
 
-            <motion.p
-                className="text-2xl sm:text-3xl md:text-4xl z-10 text-center font-bold italic text-dark"
-                initial="hidden"
-                animate="visible"
-                variants={fadeInUp}
-            >
-                <span className="text-white">BrainBooster</span> is available{" "}
-                <br /> in your <span className="text-white">appstore</span>{" "}
-                soon!
-            </motion.p>
-
             <motion.div
-                className="z-10"
+                className="z-10 w-full flex flex-1 items-center justify-center"
                 initial="hidden"
                 animate="visible"
                 variants={fadeInUp}
             >
                 <Image
-                    className="max-w-[80vw] z-10"
+                    className="max-w-[27vw] md:max-w-[17%] lg:max-w-[12%] z-10"
                     src="/BrainBooster-cutout.png"
                     alt="BrainBooster Logo"
-                    width={350}
-                    height={303}
+                    width={302}
+                    height={262}
                 />
             </motion.div>
-
             <motion.p
-                className="z-10 text-center"
+                className="text-xl sm:text-2xl md:text-3xl md:ml-auto md:mt-auto z-10 font-bold italic text-dark"
                 initial="hidden"
                 animate="visible"
                 variants={fadeInUp}
             >
-                Stay tuned for the launch date and more information!
+                BrainBooster is <span className="text-white">available</span>{" "}
+                <br /> in Appstore and Google Play{" "}
+                <span className="text-white">soon!</span>
             </motion.p>
-
-            <div className="inset-0 absolute opacity-[97%] bg-gradient-to-br from-primary to-primary_dark"></div>
         </div>
     );
 }
