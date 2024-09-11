@@ -19,10 +19,12 @@ export default function page() {
                 <p className="z-10 text-lg">Stay tuned for more information!</p>
             </div>
 
+
             <p className="text-xl sm:text-2xl md:text-3xl z-10 font-bold italic text-dark">
                 BrainBooster is <span className="text-white">available</span>{" "}
                 <br /> in Appstore and Google Play{" "}
                 <span className="text-white">soon!</span>
+
             </p>
         </motion.div>
     );

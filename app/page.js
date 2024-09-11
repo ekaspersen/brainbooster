@@ -36,6 +36,7 @@ export default function Home() {
             </motion.div>
             <motion.p
                 className="text-xl sm:text-2xl md:text-3xl md:ml-auto md:mt-auto z-10 font-bold italic text-dark"
+
                 initial="hidden"
                 animate="visible"
                 variants={fadeInUp}
@@ -44,6 +45,7 @@ export default function Home() {
                 <br /> in Appstore and Google Play{" "}
                 <span className="text-white">soon!</span>
             </motion.p>
+
         </div>
     );
 }
